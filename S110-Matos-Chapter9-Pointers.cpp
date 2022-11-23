@@ -34,6 +34,11 @@ void experiment03()
 
     bubbleSort(pa, pn);
     showArray(pa, pn);
+
+    delete[] pa;
+    pa = nullptr;
+    delete pn;
+    pn = nullptr;
 }
 //--------------------------------------------------------------------------
 void bubbleSort(int* pa, int* pn)
